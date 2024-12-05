@@ -55,7 +55,7 @@
             "chan_multiSF_5": {"enable": true, "radio": 1, "if": -100000},
             "chan_multiSF_6": {"enable": true, "radio": 1, "if":  100000},
             "chan_multiSF_7": {"enable": true, "radio": 1, "if":  300000},
-            "chan_Lora_std":  {"enable": true, "radio": 0, "if":  300000, "bandwidth": 500000, "spread_factor": 8,
+            "chan_Lora_std":  {"enable": true, "radio": 0, "if":  300000, "bandwidth": 500000, "spread_factor": 12,
                                "implicit_hdr": false, "implicit_payload_length": 17, "implicit_crc_en": false, "implicit_coderate": 1},
             "chan_FSK":       {"enable": false, "radio": 1, "if":  300000, "bandwidth": 125000, "datarate": 50000}
   }
