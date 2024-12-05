@@ -3,7 +3,7 @@
 # Licensed under the MIT License.
 
 ARG BUILD_BOARD
-ARG BUILD_ARCH
+ARG BUILD_ARCH=arm64
 
 # Set up correct image paths
 ARG PKTFWD_PATH=nebraltd/packet_forwarder:$BUILD_ARCH-e1aca266845203824889cfcd869ea64de3129113
