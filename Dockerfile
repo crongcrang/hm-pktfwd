@@ -2,8 +2,8 @@
 # (C) Nebra Ltd 2021
 # Licensed under the MIT License.
 
-ARG BUILD_BOARD=raspberrypi3-64
-ARG BUILD_ARCH=arm64
+ARG BUILD_BOARD=raspberrypi4-64
+ARG BUILD_ARCH=arm
 
 # Set up correct image paths
 ARG PKTFWD_PATH=nebraltd/packet_forwarder:$BUILD_ARCH-e1aca266845203824889cfcd869ea64de3129113
