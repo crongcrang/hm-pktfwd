@@ -2,7 +2,7 @@
 # (C) Nebra Ltd 2021
 # Licensed under the MIT License.
 
-ARG BUILD_BOARD
+ARG BUILD_BOARD=raspberrypi3-64
 ARG BUILD_ARCH=arm64
 
 # Set up correct image paths
