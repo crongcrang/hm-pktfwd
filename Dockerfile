@@ -90,5 +90,9 @@ ENV PYTHONPATH="${PYTHONPATH}:${PYTHON_DEPENDENCIES_DIR}"
 COPY start_pktfwd.sh /opt/start_pktfwd.sh
 COPY setenv_pktfwd.sh /opt/nebra/setenv_pktfwd.sh
 
+# Ensure CRLF characters are removed
+RUN sed -i 's/\r//g' /opt/start_pktfwd.sh && \
+    sed -i 's/\r//g' /opt/nebra/setenv_pktfwd.sh
+
 # Run pktfwd/__main__.py
 ENTRYPOINT ["./start_pktfwd.sh"]
